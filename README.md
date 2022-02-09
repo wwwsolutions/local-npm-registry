@@ -10,7 +10,9 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - Cache npmjs.org registry
 - Override public packages
 
-## Configurations
+## Available Configurations
+
+All configs utilize Docker.
 
 - [ ] verdaccio-v4-amazon-s3-docker
 - [ ] verdaccio-v4-apache-verdaccio
@@ -25,23 +27,43 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - [ ] verdaccio-v4-plugins-docker-extend
 
 - [x] verdaccio-v4-reverse-proxy
-  - root-path
-  - relative-path
-  - relative-path-ssl
+  - [root-path](libs/verdaccio/v4/reverse-proxy/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path-ssl/README.md)
 
 - [x] verdaccio-v5-reverse-proxy
-  - root-path
-  - relative-path
-  - relative-path-ssl
+  - [root-path](libs/verdaccio/v5/reverse-proxy/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path-ssl/README.md)
 
 - [ ] verdaccio-v6-apache-verdaccio
 - [ ] verdaccio-v6-docker-local-storage-volume
 - [ ] verdaccio-v6-https-portal
 
 - [x] verdaccio-v6-reverse-proxy
-  - root-path
-  - relative-path
-  - relative-path-ssl
+  - [root-path](libs/verdaccio/v6/reverse-proxy/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v6/reverse-proxy/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy/src/nginx/relative-path-ssl/README.md)
+
+## Usage
+
+### Register user | login
+
+```bash
+npm adduser --registry http://localhost:4873
+```
+
+### Install packages
+
+```bash
+npm install react --registry http://localhost:4873
+```
+
+### Publish packages
+
+```bash
+npm publish --registry http://localhost:4873
+```
 
 ---
 
