@@ -8,7 +8,6 @@
     "format": "nx format:write",
     "format:check": "nx format:check",
     "dep-graph": "nx dep-graph"
-    
   },
   "private": true,
   "devDependencies": {
@@ -23,7 +22,7 @@
     "eslint": "7.22.0",
     "eslint-config-prettier": "8.1.0",
     "prettier": "^2.3.1",
-    "typescript": "~4.3.5"
-  },
-  "dependencies": {}
+    "typescript": "~4.3.5",
+    "verdaccio": "^5.5.2"
+  }
 }
