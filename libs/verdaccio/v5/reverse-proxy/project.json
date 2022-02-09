@@ -9,7 +9,76 @@
       "options": {
         "lintFilePatterns": ["libs/verdaccio/v5/reverse-proxy/**/*.ts"]
       }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v5/reverse-proxy/src/nginx",
+        "commands": [
+          "docker-compose --project-name v5-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v5/reverse-proxy/src/nginx",
+        "commands": [
+          "docker-compose --project-name v5-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v5/reverse-proxy/src/nginx",
+        "commands": [
+          "docker-compose --project-name v5-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v5/reverse-proxy/src/nginx",
+        "commands": [
+          "docker-compose --project-name v5-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v5-reverse-proxy:up --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy:down --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy:recreate --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy:force-recreate --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy:up --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy:down --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy:recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy:force-recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy:up --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy:down --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy:recreate --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy:force-recreate --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy:system-prune"
+        ]
+      }
     }
+
   },
   "tags": ["type:config", "scope:verdaccio"]
 }

@@ -62,13 +62,18 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run api-integration-graphql-prisma:docker-compose --mode=development",
-          "nx run api-integration-graphql-prisma:docker-up --mode=development",
-          "nx run api-integration-graphql-prisma:docker-down --mode=development",
-          "nx run api-integration-graphql-prisma:docker-clean --mode=development",
-          "nx run api-integration-graphql-prisma:docker-config --mode=development",
-          "nx run api-integration-graphql-prisma:docker-logs --mode=development",
-          "nx run api-integration-graphql-prisma:docker-logs-save --mode=development",
+          "nx run verdaccio-v4-reverse-proxy:up --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:down --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:recreate --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:up --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy:down --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy:recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy:up --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy:down --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy:recreate --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=root-path",
           "nx run verdaccio-v4-reverse-proxy:system-prune"
         ]
       }

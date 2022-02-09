@@ -23,11 +23,17 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - [ ] verdaccio-v4-ldap-verdaccio
 - [ ] verdaccio-v4-multi-registry-uplink
 - [ ] verdaccio-v4-plugins-docker-extend
+
 - [x] verdaccio-v4-reverse-proxy
   - root-path
   - relative-path
   - relative-path-ssl
-- [ ] verdaccio-v5-reverse-proxy
+
+- [x] verdaccio-v5-reverse-proxy
+  - root-path
+  - relative-path
+  - relative-path-ssl
+
 - [ ] verdaccio-v6-apache-verdaccio
 - [ ] verdaccio-v6-docker-local-storage-volume
 - [ ] verdaccio-v6-https-portal
