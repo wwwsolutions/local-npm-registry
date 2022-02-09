@@ -37,7 +37,11 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - [ ] verdaccio-v6-apache-verdaccio
 - [ ] verdaccio-v6-docker-local-storage-volume
 - [ ] verdaccio-v6-https-portal
-- [ ] verdaccio-v6-reverse-proxy
+
+- [x] verdaccio-v6-reverse-proxy
+  - root-path
+  - relative-path
+  - relative-path-ssl
 
 ---
 
