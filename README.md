@@ -12,8 +12,6 @@ With [Verdaccio](https://verdaccio.org/), you can:
 
 ## Configurations
 
-*adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
-
 - [ ] verdaccio-v4-amazon-s3-docker
 - [ ] verdaccio-v4-apache-verdaccio
 - [ ] verdaccio-v4-docker-local-storage-volume
@@ -35,3 +33,6 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - [ ] verdaccio-v6-https-portal
 - [ ] verdaccio-v6-reverse-proxy
 
+---
+
+*adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
