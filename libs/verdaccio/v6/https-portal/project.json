@@ -1,0 +1,15 @@
+{
+  "root": "libs/verdaccio/v6/https-portal",
+  "sourceRoot": "libs/verdaccio/v6/https-portal/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v6/https-portal/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

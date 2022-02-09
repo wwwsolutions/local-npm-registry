@@ -1,0 +1,15 @@
+{
+  "root": "libs/verdaccio/v4/amazon-s3-docker",
+  "sourceRoot": "libs/verdaccio/v4/amazon-s3-docker/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v4/amazon-s3-docker/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

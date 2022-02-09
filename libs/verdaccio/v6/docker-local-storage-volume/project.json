@@ -1,0 +1,17 @@
+{
+  "root": "libs/verdaccio/v6/docker-local-storage-volume",
+  "sourceRoot": "libs/verdaccio/v6/docker-local-storage-volume/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/verdaccio/v6/docker-local-storage-volume/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}
