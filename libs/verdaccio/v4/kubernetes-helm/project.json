@@ -1,0 +1,15 @@
+{
+  "root": "libs/verdaccio/v4/kubernetes-helm",
+  "sourceRoot": "libs/verdaccio/v4/kubernetes-helm/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v4/kubernetes-helm/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

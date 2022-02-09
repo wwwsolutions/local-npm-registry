@@ -1,38 +1,29 @@
 {
-  "name": "local-npm-registry",
+  "name": "wwwsolutions-local-npm-registry",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "pre-commit": "lint-staged",
     "lint": "nx workspace-lint && nx lint",
     "lint-all": "nx run-many --all --target=lint",
-    "affected:lint-all": "nx affected:lint --base=main~1 --head=main --parallel=6 --verbose",
-    "affected": "nx affected --base=main",
-    "affected:dep-graph": "nx affected:dep-graph --base=main",
-    "affected:apps": "nx affected:apps --base=main",
-    "affected:libs": "nx affected:libs --base=main",
-    "affected:build": "nx affected:build --base=main",
-    "affected:test": "nx affected:test --base=main",
-    "affected:lint": "nx affected:lint --base=main --parallel=6",
     "format": "nx format:write",
     "format:check": "nx format:check",
     "dep-graph": "nx dep-graph"
+    
   },
   "private": true,
   "devDependencies": {
     "@nrwl/cli": "12.10.1",
+    "@nrwl/eslint-plugin-nx": "12.10.1",
+    "@nrwl/linter": "12.10.1",
     "@nrwl/tao": "12.10.1",
     "@nrwl/workspace": "12.10.1",
     "@types/node": "14.14.33",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.3.3",
+    "@typescript-eslint/eslint-plugin": "~4.31.1",
+    "@typescript-eslint/parser": "~4.31.1",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
     "prettier": "^2.3.1",
     "typescript": "~4.3.5"
   },
-  "lint-staged": {
-    "*.{js,json,md,ts}": [
-      "npm run affected:lint --uncommitted",
-      "npm run format --uncommitted"
-    ]
-  }
+  "dependencies": {}
 }

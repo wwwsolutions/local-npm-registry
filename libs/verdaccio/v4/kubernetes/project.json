@@ -1,0 +1,15 @@
+{
+  "root": "libs/verdaccio/v4/kubernetes",
+  "sourceRoot": "libs/verdaccio/v4/kubernetes/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v4/kubernetes/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

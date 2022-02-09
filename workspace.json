@@ -1,6 +1,24 @@
 {
   "version": 2,
-  "projects": {},
+  "projects": {
+    "verdaccio-v4-amazon-s3-docker": "libs/verdaccio/v4/amazon-s3-docker",
+    "verdaccio-v4-apache-verdaccio": "libs/verdaccio/v4/apache-verdaccio",
+    "verdaccio-v4-docker-local-storage-volume": "libs/verdaccio/v4/docker-local-storage-volume",
+    "verdaccio-v4-docker-plugin-external": "libs/verdaccio/v4/docker-plugin-external",
+    "verdaccio-v4-gitlab-verdaccio": "libs/verdaccio/v4/gitlab-verdaccio",
+    "verdaccio-v4-https-portal": "libs/verdaccio/v4/https-portal",
+    "verdaccio-v4-kubernetes": "libs/verdaccio/v4/kubernetes",
+    "verdaccio-v4-kubernetes-helm": "libs/verdaccio/v4/kubernetes-helm",
+    "verdaccio-v4-ldap-verdaccio": "libs/verdaccio/v4/ldap-verdaccio",
+    "verdaccio-v4-multi-registry-uplink": "libs/verdaccio/v4/multi-registry-uplink",
+    "verdaccio-v4-plugins-docker-extend": "libs/verdaccio/v4/plugins-docker-extend",
+    "verdaccio-v4-reverse-proxy": "libs/verdaccio/v4/reverse-proxy",
+    "verdaccio-v5-reverse-proxy": "libs/verdaccio/v5/reverse-proxy",
+    "verdaccio-v6-apache-verdaccio": "libs/verdaccio/v6/apache-verdaccio",
+    "verdaccio-v6-docker-local-storage-volume": "libs/verdaccio/v6/docker-local-storage-volume",
+    "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
+    "verdaccio-v6-reverse-proxy": "libs/verdaccio/v6/reverse-proxy"
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }

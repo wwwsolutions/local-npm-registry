@@ -1,5 +1,5 @@
 {
-  "npmScope": "local-npm-registry",
+  "npmScope": "wwwsolutions",
   "affected": {
     "defaultBase": "main"
   },
