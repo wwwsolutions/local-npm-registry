@@ -19,7 +19,7 @@ All configs utilize Docker.
 - [x] verdaccio-v4-amazon-s3
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
 
-- [ ] verdaccio-v4-apache-verdaccio
+- [x] verdaccio-v4-apache-verdaccio
   - [apache2](libs/verdaccio/v4/apache-verdaccio/src/apache2/README.md)
 
 - [x] verdaccio-v4-docker-local-storage-volume
