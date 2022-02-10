@@ -15,7 +15,7 @@
     "verdaccio-v4-reverse-proxy-nginx": "libs/verdaccio/v4/reverse-proxy-nginx",
     "verdaccio-v5-reverse-proxy-nginx": "libs/verdaccio/v5/reverse-proxy-nginx",
     "verdaccio-v6-docker-local-storage-volume": "libs/verdaccio/v6/docker-local-storage-volume",
-    "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
+    "verdaccio-v6-https-portal-nginx": "libs/verdaccio/v6/https-portal-nginx",
     "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache",
     "verdaccio-v6-reverse-proxy-nginx": "libs/verdaccio/v6/reverse-proxy-nginx"
   },

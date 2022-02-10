@@ -59,8 +59,8 @@
       "@verdacio/v6-docker-local-storage-volume": [
         "libs/verdaccio/v6/docker-local-storage-volume/src/index.ts"
       ],
-      "@verdacio/v6-https-portal": [
-        "libs/verdaccio/v6/https-portal/src/index.ts"
+      "@verdacio/v6-https-portal-nginx": [
+        "libs/verdaccio/v6/https-portal-nginx/src/index.ts"
       ],
       "@verdacio/v6-reverse-proxy-apache": [
         "libs/verdaccio/v6/reverse-proxy-apache/src/index.ts"
