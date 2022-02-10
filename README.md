@@ -20,7 +20,8 @@ All configs utilize Docker.
 - [ ] verdaccio-v4-gitlab
 - [ ] verdaccio-v4-kubernetes
 - [ ] verdaccio-v4-kubernetes-helm
-- [ ] verdaccio-v4-multi-registry-uplink
+
+- [x] [verdaccio-v4-multi-registry-uplink](libs/verdaccio/v4/multi-registry-uplink/src/lib/README.md)
 
 - [x] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
 
