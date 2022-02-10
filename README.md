@@ -14,10 +14,14 @@ With [Verdaccio](https://verdaccio.org/), you can:
 
 All configs utilize Docker.
 
+### v4
+
 - [x] verdaccio-v4-amazon-s3
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
 
 - [ ] verdaccio-v4-apache-verdaccio
+  - [apache2](libs/verdaccio/v4/apache-verdaccio/src/apache2/README.md)
+
 - [x] verdaccio-v4-docker-local-storage-volume
   - [simple](libs/verdaccio/v4/docker-local-storage-volume/src/simple/README.md)
 
@@ -37,12 +41,18 @@ All configs utilize Docker.
   - [relative-path](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path/README.md)
   - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path-ssl/README.md)
 
+### v5
+
 - [x] verdaccio-v5-reverse-proxy
   - [root-path](libs/verdaccio/v5/reverse-proxy/src/nginx/root-path/README.md)
   - [relative-path](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path/README.md)
   - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path-ssl/README.md)
 
-- [ ] verdaccio-v6-apache-verdaccio
+### v6
+
+- [x] verdaccio-v6-apache-verdaccio
+  - [apache2](libs/verdaccio/v6/apache-verdaccio/src/apache2/README.md)
+
 - [x] verdaccio-v6-docker-local-storage-volume
   - [simple](libs/verdaccio/v6/docker-local-storage-volume/src/simple/README.md)
 
