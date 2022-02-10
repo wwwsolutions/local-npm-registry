@@ -56,9 +56,6 @@
       "@verdacio/v4-reverse-proxy-nginx": [
         "libs/verdaccio/v4/reverse-proxy-nginx/src/index.ts"
       ],
-      "@verdacio/v5-reverse-proxy": [
-        "libs/verdaccio/v5/reverse-proxy/src/index.ts"
-      ],
       "@verdacio/v5-reverse-proxy-nginx": [
         "libs/verdaccio/v5/reverse-proxy-nginx/src/index.ts"
       ],

@@ -6,15 +6,14 @@ This example runs two verdaccio versions:
 
 Note: we should add more sort of configurations here.
 
-**Nginx SSL Example**
+**Nginx HTTP Example**
 
 ```bash
-npx nx run verdaccio-v5-reverse-proxy:force-recreate --mode=relative-path-ssl
+npx nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path
 ```
 
 open the browser
 
 ```
-https://localhost/verdaccio/
+http://localhost/relative_path/
 ```
-

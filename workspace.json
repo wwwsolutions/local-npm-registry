@@ -13,7 +13,7 @@
     "verdaccio-v4-plugins-docker-extend": "libs/verdaccio/v4/plugins-docker-extend",
     "verdaccio-v4-reverse-proxy": "libs/verdaccio/v4/reverse-proxy",
     "verdaccio-v4-reverse-proxy-apache": "libs/verdaccio/v4/reverse-proxy-apache",
-    "verdaccio-v5-reverse-proxy": "libs/verdaccio/v5/reverse-proxy",
+    "verdaccio-v5-reverse-proxy-nginx": "libs/verdaccio/v5/reverse-proxy-nginx",
     "verdaccio-v6-docker-local-storage-volume": "libs/verdaccio/v6/docker-local-storage-volume",
     "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
     "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache",
