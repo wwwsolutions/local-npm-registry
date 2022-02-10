@@ -72,7 +72,6 @@
         ]
       }
     }
-
   },
   "tags": ["type:config", "scope:verdaccio"]
 }

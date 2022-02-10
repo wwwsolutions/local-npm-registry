@@ -42,6 +42,8 @@ All configs utilize Docker.
 
 - [ ] verdaccio-v6-apache-verdaccio
 - [ ] verdaccio-v6-docker-local-storage-volume
+  - [simple](libs/verdaccio/v6/docker-local-storage-volume/src/simple/README.md)
+
 - [ ] verdaccio-v6-https-portal
 
 - [x] verdaccio-v6-reverse-proxy
