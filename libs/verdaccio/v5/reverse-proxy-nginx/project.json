@@ -62,19 +62,19 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy-nginx:system-prune"
+          "nx run verdaccio-v5-reverse-proxy-nginx:up --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:down --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:recreate --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:force-recreate --mode=relative-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:up --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy-nginx:down --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy-nginx:recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy-nginx:force-recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v5-reverse-proxy-nginx:up --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:down --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:recreate --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:force-recreate --mode=root-path",
+          "nx run verdaccio-v5-reverse-proxy-nginx:system-prune"
         ]
       }
     }

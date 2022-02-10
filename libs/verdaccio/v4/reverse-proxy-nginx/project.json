@@ -1,20 +1,20 @@
 {
-  "root": "libs/verdaccio/v4/reverse-proxy",
-  "sourceRoot": "libs/verdaccio/v4/reverse-proxy/src",
+  "root": "libs/verdaccio/v4/reverse-proxy-nginx",
+  "sourceRoot": "libs/verdaccio/v4/reverse-proxy-nginx/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v4/reverse-proxy/**/*.ts"]
+        "lintFilePatterns": ["libs/verdaccio/v4/reverse-proxy-nginx/**/*.ts"]
       }
     },
     "up": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/reverse-proxy/src/nginx",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-nginx/src/nginx",
         "commands": [
           "docker-compose --project-name v4-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
         ]
@@ -24,7 +24,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/reverse-proxy/src/nginx",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-nginx/src/nginx",
         "commands": [
           "docker-compose --project-name v4-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
         ]
@@ -34,7 +34,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/reverse-proxy/src/nginx",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-nginx/src/nginx",
         "commands": [
           "docker-compose --project-name v4-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
         ]
@@ -44,7 +44,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/reverse-proxy/src/nginx",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-nginx/src/nginx",
         "commands": [
           "docker-compose --project-name v4-reverse-proxy-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
         ]
@@ -62,19 +62,19 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-reverse-proxy:up --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy:down --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy:recreate --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=relative-path",
-          "nx run verdaccio-v4-reverse-proxy:up --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy:down --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy:recreate --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=relative-path-ssl",
-          "nx run verdaccio-v4-reverse-proxy:up --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy:down --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy:recreate --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy:force-recreate --mode=root-path",
-          "nx run verdaccio-v4-reverse-proxy:system-prune"
+          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path-ssl",
+          "nx run verdaccio-v4-reverse-proxy-nginx:up --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:down --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=root-path",
+          "nx run verdaccio-v4-reverse-proxy-nginx:system-prune"
         ]
       }
     }

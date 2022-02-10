@@ -10,19 +10,19 @@ This folder provides the following examples:
 To run the containers, run the following commands in this folder. The containers should start in detach mode.
 
 ```bash
-npx nx run verdaccio-v4-reverse-proxy:up --mode=root-path
+npx nx run verdaccio-v4-reverse-proxy-nginx:up --mode=root-path
 ```
 
 To recreate the nginx image you can force the build.
 
 ```bash
-npx nx run verdaccio-v4-reverse-proxy:recreate --mode=root-path
+npx nx run verdaccio-v4-reverse-proxy-nginx:recreate --mode=root-path
 ```
 
 To force recreate the images.
 
 ```bash
-npx nx run verdaccio-v4-reverse-proxy:force-recreate --mode=root-path
+npx nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=root-path
 ```
 
 To stop all containers

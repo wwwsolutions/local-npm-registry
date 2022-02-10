@@ -62,11 +62,11 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-reverse-proxy-apache:up --mode=apache2",
-          "nx run verdaccio-v4-reverse-proxy-apache:down --mode=apache2",
-          "nx run verdaccio-v4-reverse-proxy-apache:recreate --mode=apache2",
-          "nx run verdaccio-v4-reverse-proxy-apache:force-recreate --mode=apache2",
-          "nx run verdaccio-v4-reverse-proxy-apache:system-prune"
+          "nx run verdaccio-v4-reverse-proxy-nginx-apache:up --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-nginx-apache:down --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-nginx-apache:recreate --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-nginx-apache:force-recreate --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-nginx-apache:system-prune"
         ]
       }
     }

@@ -47,9 +47,6 @@
       "@verdacio/v4-plugins-docker-extend": [
         "libs/verdaccio/v4/plugins-docker-extend/src/index.ts"
       ],
-      "@verdacio/v4-reverse-proxy": [
-        "libs/verdaccio/v4/reverse-proxy/src/index.ts"
-      ],
       "@verdacio/v4-reverse-proxy-apache": [
         "libs/verdaccio/v4/reverse-proxy-apache/src/index.ts"
       ],

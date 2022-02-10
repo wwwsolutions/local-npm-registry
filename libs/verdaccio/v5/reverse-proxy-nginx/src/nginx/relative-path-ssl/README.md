@@ -9,7 +9,7 @@ Note: we should add more sort of configurations here.
 **Nginx SSL Example**
 
 ```bash
-npx nx run verdaccio-v4-reverse-proxy-nginx:force-recreate --mode=relative-path-ssl
+npx nx run verdaccio-v5-reverse-proxy-nginx:force-recreate --mode=relative-path-ssl
 ```
 
 open the browser
