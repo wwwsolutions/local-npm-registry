@@ -19,9 +19,6 @@ All configs utilize Docker.
 - [x] verdaccio-v4-amazon-s3
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
 
-- [x] verdaccio-v4-apache-verdaccio
-  - [apache2](libs/verdaccio/v4/apache-verdaccio/src/apache2/README.md)
-
 - [x] verdaccio-v4-docker-local-storage-volume
   - [simple](libs/verdaccio/v4/docker-local-storage-volume/src/simple/README.md)
 
@@ -35,6 +32,9 @@ All configs utilize Docker.
 - [ ] verdaccio-v4-ldap-verdaccio
 - [ ] verdaccio-v4-multi-registry-uplink
 - [ ] verdaccio-v4-plugins-docker-extend
+
+- [x] verdaccio-v4-reverse-proxy-apache
+  - [apache2](libs/verdaccio/v4/reverse-proxy-apache/src/apache2/README.md)
 
 - [x] verdaccio-v4-reverse-proxy
   - [root-path](libs/verdaccio/v4/reverse-proxy/src/nginx/root-path/README.md)

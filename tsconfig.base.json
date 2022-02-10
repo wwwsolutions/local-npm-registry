@@ -19,9 +19,6 @@
       "@verdacio/v4-amazon-s3-docker-example": [
         "libs/verdaccio/v4/amazon-s3-docker-example/src/index.ts"
       ],
-      "@verdacio/v4-apache-verdaccio": [
-        "libs/verdaccio/v4/apache-verdaccio/src/index.ts"
-      ],
       "@verdacio/v4-docker-local-storage-volume": [
         "libs/verdaccio/v4/docker-local-storage-volume/src/index.ts"
       ],
@@ -52,6 +49,9 @@
       ],
       "@verdacio/v4-reverse-proxy": [
         "libs/verdaccio/v4/reverse-proxy/src/index.ts"
+      ],
+      "@verdacio/v4-reverse-proxy-apache": [
+        "libs/verdaccio/v4/reverse-proxy-apache/src/index.ts"
       ],
       "@verdacio/v4-reverse-proxy-nginx": [
         "libs/verdaccio/v4/reverse-proxy-nginx/src/index.ts"

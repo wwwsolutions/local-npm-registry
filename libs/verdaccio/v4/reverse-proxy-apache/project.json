@@ -1,20 +1,20 @@
 {
-  "root": "libs/verdaccio/v4/apache-verdaccio",
-  "sourceRoot": "libs/verdaccio/v4/apache-verdaccio/src",
+  "root": "libs/verdaccio/v4/reverse-proxy-apache",
+  "sourceRoot": "libs/verdaccio/v4/reverse-proxy-apache/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v4/apache-verdaccio/**/*.ts"]
+        "lintFilePatterns": ["libs/verdaccio/v4/reverse-proxy-apache/**/*.ts"]
       }
     },
     "up": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/apache-verdaccio/src",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-apache/src",
         "commands": [
           "docker-compose --project-name v4-apache-verdaccio-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
         ]
@@ -24,7 +24,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/apache-verdaccio/src",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-apache/src",
         "commands": [
           "docker-compose --project-name v4-apache-verdaccio-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
         ]
@@ -34,7 +34,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/apache-verdaccio/src",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-apache/src",
         "commands": [
           "docker-compose --project-name v4-apache-verdaccio-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
         ]
@@ -44,7 +44,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/apache-verdaccio/src",
+        "cwd": "libs/verdaccio/v4/reverse-proxy-apache/src",
         "commands": [
           "docker-compose --project-name v4-apache-verdaccio-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
         ]
@@ -62,15 +62,14 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-apache-verdaccio:up --mode=apache2",
-          "nx run verdaccio-v4-apache-verdaccio:down --mode=apache2",
-          "nx run verdaccio-v4-apache-verdaccio:recreate --mode=apache2",
-          "nx run verdaccio-v4-apache-verdaccio:force-recreate --mode=apache2",
-          "nx run verdaccio-v4-apache-verdaccio:system-prune"
+          "nx run verdaccio-v4-reverse-proxy-apache:up --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-apache:down --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-apache:recreate --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-apache:force-recreate --mode=apache2",
+          "nx run verdaccio-v4-reverse-proxy-apache:system-prune"
         ]
       }
     }
-
   },
   "tags": ["type:config", "scope:verdaccio"]
 }
