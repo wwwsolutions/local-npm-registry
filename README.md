@@ -12,14 +12,17 @@ With [Verdaccio](https://verdaccio.org/), you can:
 
 ## Available Configurations
 
-All configs utilize Docker.
+Configs utilize Docker and Kubernetes.
 
 ### v4
 
 - [ ] verdaccio-v4-plugin-external
-- [ ] verdaccio-v4-gitlab
-- [ ] verdaccio-v4-kubernetes
-- [ ] verdaccio-v4-kubernetes-helm
+
+- [x] [verdaccio-v4-gitlab](libs/verdaccio/v4/gitlab/src/lib/README.md)
+
+- [x] [verdaccio-v4-kubernetes](libs/verdaccio/v4/kubernetes/src/lib/README.md)
+
+- [x] [verdaccio-v4-kubernetes-helm](libs/verdaccio/v4/kubernetes-helm/src/lib/README.md)
 
 - [x] [verdaccio-v4-multi-registry-uplink](libs/verdaccio/v4/multi-registry-uplink/src/lib/README.md)
 
