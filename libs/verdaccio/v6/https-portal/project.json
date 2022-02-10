@@ -9,7 +9,68 @@
       "options": {
         "lintFilePatterns": ["libs/verdaccio/v6/https-portal/**/*.ts"]
       }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/https-portal/src",
+        "commands": [
+          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/https-portal/src",
+        "commands": [
+          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/https-portal/src",
+        "commands": [
+          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/https-portal/src",
+        "commands": [
+          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v6-https-portal:up --mode=nginx",
+          "nx run verdaccio-v6-https-portal:down --mode=nginx",
+          "nx run verdaccio-v6-https-portal:recreate --mode=nginx",
+          "nx run verdaccio-v6-https-portal:force-recreate --mode=nginx",
+          "nx run verdaccio-v6-https-portal:system-prune"
+        ]
+      }
     }
+
   },
   "tags": ["type:config", "scope:verdaccio"]
 }
