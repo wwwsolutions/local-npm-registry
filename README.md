@@ -24,6 +24,8 @@ All configs utilize Docker.
 - [ ] verdaccio-v4-docker-plugin-external
 - [ ] verdaccio-v4-gitlab-verdaccio
 - [ ] verdaccio-v4-https-portal
+  - [nginx](libs/verdaccio/v4/verdaccio-v4-https-portal/src/nginx/README.md)
+
 - [ ] verdaccio-v4-kubernetes
 - [ ] verdaccio-v4-kubernetes-helm
 - [ ] verdaccio-v4-ldap-verdaccio
