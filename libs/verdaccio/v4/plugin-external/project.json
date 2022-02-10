@@ -1,0 +1,76 @@
+{
+  "root": "libs/verdaccio/v4/plugin-external",
+  "sourceRoot": "libs/verdaccio/v4/plugin-external/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v4/plugin-external/**/*.ts"]
+      }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-plugin-external --verbose -f ./docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-plugin-external --verbose -f ./docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-plugin-external --verbose -f ./docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-plugin-external --verbose -f ./docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v4-plugin-external:up",
+          "nx run verdaccio-v4-plugin-external:down",
+          "nx run verdaccio-v4-plugin-external:recreate",
+          "nx run verdaccio-v4-plugin-external:force-recreate",
+          "nx run verdaccio-v4-plugin-external:system-prune"
+        ]
+      }
+    }
+
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

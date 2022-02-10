@@ -1,23 +1,22 @@
 {
   "version": 2,
   "projects": {
-    "verdaccio-v4-amazon-s3-docker": "libs/verdaccio/v4/amazon-s3-docker",
-    "verdaccio-v4-apache-verdaccio": "libs/verdaccio/v4/apache-verdaccio",
-    "verdaccio-v4-docker-local-storage-volume": "libs/verdaccio/v4/docker-local-storage-volume",
-    "verdaccio-v4-docker-plugin-external": "libs/verdaccio/v4/docker-plugin-external",
-    "verdaccio-v4-gitlab-verdaccio": "libs/verdaccio/v4/gitlab-verdaccio",
-    "verdaccio-v4-https-portal": "libs/verdaccio/v4/https-portal",
+    "verdaccio-v4-amazon-s3": "libs/verdaccio/v4/amazon-s3",
+    "verdaccio-v4-gitlab": "libs/verdaccio/v4/gitlab",
+    "verdaccio-v4-https-portal-nginx": "libs/verdaccio/v4/https-portal-nginx",
     "verdaccio-v4-kubernetes": "libs/verdaccio/v4/kubernetes",
     "verdaccio-v4-kubernetes-helm": "libs/verdaccio/v4/kubernetes-helm",
-    "verdaccio-v4-ldap-verdaccio": "libs/verdaccio/v4/ldap-verdaccio",
+    "verdaccio-v4-ldap": "libs/verdaccio/v4/ldap",
+    "verdaccio-v4-local-storage-volume": "libs/verdaccio/v4/local-storage-volume",
     "verdaccio-v4-multi-registry-uplink": "libs/verdaccio/v4/multi-registry-uplink",
-    "verdaccio-v4-plugins-docker-extend": "libs/verdaccio/v4/plugins-docker-extend",
-    "verdaccio-v4-reverse-proxy": "libs/verdaccio/v4/reverse-proxy",
-    "verdaccio-v5-reverse-proxy": "libs/verdaccio/v5/reverse-proxy",
-    "verdaccio-v6-apache-verdaccio": "libs/verdaccio/v6/apache-verdaccio",
-    "verdaccio-v6-docker-local-storage-volume": "libs/verdaccio/v6/docker-local-storage-volume",
-    "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
-    "verdaccio-v6-reverse-proxy": "libs/verdaccio/v6/reverse-proxy"
+    "verdaccio-v4-plugin-external": "libs/verdaccio/v4/plugin-external",
+    "verdaccio-v4-reverse-proxy-apache": "libs/verdaccio/v4/reverse-proxy-apache",
+    "verdaccio-v4-reverse-proxy-nginx": "libs/verdaccio/v4/reverse-proxy-nginx",
+    "verdaccio-v5-reverse-proxy-nginx": "libs/verdaccio/v5/reverse-proxy-nginx",
+    "verdaccio-v6-https-portal-nginx": "libs/verdaccio/v6/https-portal-nginx",
+    "verdaccio-v6-local-storage-volume": "libs/verdaccio/v6/local-storage-volume",
+    "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache",
+    "verdaccio-v6-reverse-proxy-nginx": "libs/verdaccio/v6/reverse-proxy-nginx"
   },
   "cli": {
     "defaultCollection": "@nrwl/workspace"

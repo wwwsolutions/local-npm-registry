@@ -1,0 +1,76 @@
+{
+  "root": "libs/verdaccio/v4/ldap",
+  "sourceRoot": "libs/verdaccio/v4/ldap/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v4/ldap/**/*.ts"]
+      }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/ldap/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-ldap --verbose -f ./docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/ldap/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-ldap --verbose -f ./docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/ldap/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-ldap --verbose -f ./docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/ldap/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-ldap --verbose -f ./docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v4-ldap:up",
+          "nx run verdaccio-v4-ldap:down",
+          "nx run verdaccio-v4-ldap:recreate",
+          "nx run verdaccio-v4-ldap:force-recreate",
+          "nx run verdaccio-v4-ldap:system-prune"
+        ]
+      }
+    }
+
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}

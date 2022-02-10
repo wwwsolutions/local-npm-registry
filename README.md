@@ -12,38 +12,61 @@ With [Verdaccio](https://verdaccio.org/), you can:
 
 ## Available Configurations
 
-All configs utilize Docker.
+Configs utilize Docker and Kubernetes.
 
-- [ ] verdaccio-v4-amazon-s3-docker
-- [ ] verdaccio-v4-apache-verdaccio
-- [ ] verdaccio-v4-docker-local-storage-volume
-- [ ] verdaccio-v4-docker-plugin-external
-- [ ] verdaccio-v4-gitlab-verdaccio
-- [ ] verdaccio-v4-https-portal
-- [ ] verdaccio-v4-kubernetes
-- [ ] verdaccio-v4-kubernetes-helm
-- [ ] verdaccio-v4-ldap-verdaccio
-- [ ] verdaccio-v4-multi-registry-uplink
-- [ ] verdaccio-v4-plugins-docker-extend
+### v4
 
-- [x] verdaccio-v4-reverse-proxy
-  - [root-path](libs/verdaccio/v4/reverse-proxy/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy/src/nginx/relative-path-ssl/README.md)
+- [ ] verdaccio-v4-plugin-external
 
-- [x] verdaccio-v5-reverse-proxy
-  - [root-path](libs/verdaccio/v5/reverse-proxy/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy/src/nginx/relative-path-ssl/README.md)
+- [x] [verdaccio-v4-gitlab](libs/verdaccio/v4/gitlab/src/lib/README.md)
 
-- [ ] verdaccio-v6-apache-verdaccio
-- [ ] verdaccio-v6-docker-local-storage-volume
-- [ ] verdaccio-v6-https-portal
+- [x] [verdaccio-v4-kubernetes](libs/verdaccio/v4/kubernetes/src/lib/README.md)
 
-- [x] verdaccio-v6-reverse-proxy
-  - [root-path](libs/verdaccio/v6/reverse-proxy/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v6/reverse-proxy/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy/src/nginx/relative-path-ssl/README.md)
+- [x] [verdaccio-v4-kubernetes-helm](libs/verdaccio/v4/kubernetes-helm/src/lib/README.md)
+
+- [x] [verdaccio-v4-multi-registry-uplink](libs/verdaccio/v4/multi-registry-uplink/src/lib/README.md)
+
+- [x] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
+
+- [x] verdaccio-v4-amazon-s3
+  - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
+
+- [x] verdaccio-v4-https-portal
+  - [nginx](libs/verdaccio/v4/https-portal-nginx/src/nginx/README.md)
+
+- [x] verdaccio-v4-local-storage-volume
+  - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
+
+- [x] verdaccio-v4-reverse-proxy-apache
+  - [apache2](libs/verdaccio/v4/reverse-proxy-apache/src/apache2/README.md)
+
+- [x] verdaccio-v4-reverse-proxy-nginx
+  - [root-path](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
+
+### v5
+
+- [x] verdaccio-v5-reverse-proxy-nginx
+  - [root-path](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
+
+### v6
+
+- [x] verdaccio-v6-local-storage-volume
+  - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
+
+- [x] verdaccio-v6-https-portal
+  - [nginx](libs/verdaccio/v6/https-portal-nginx/src/nginx/README.md)
+
+- [x] verdaccio-v6-reverse-proxy-apache
+  - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)
+
+- [x] verdaccio-v6-reverse-proxy-nginx
+  - [root-path](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/root-path/README.md)
+  - [relative-path](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path/README.md)
+  - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
 
 ## Usage
 
