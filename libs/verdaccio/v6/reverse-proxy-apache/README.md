@@ -1,3 +1,3 @@
-# verdaccio-v6-apache-verdaccio
+# verdaccio-v6-reverse-proxy-apache
 
 This library was generated with [Nx](https://nx.dev).

@@ -5,13 +5,13 @@ Running `verdaccio` via reverse proxy is a common practice. This configuration p
 To run the containers, run the following command in this folder, it should start the containers in detach mode.
 
 ```bash
-npx nx run verdaccio-v6-apache-verdaccio:up --mode=apache2
+npx nx run verdaccio-v4-reverse-proxy-apache:up --mode=apache2
 ```
 
 To recreate the nginx image you can force the build.
 
 ```bash
-npx nx run verdaccio-v6-apache-verdaccio:recreate --mode=apache2
+npx nx run verdaccio-v4-reverse-proxy-apache:recreate --mode=apache2
 
  Building apacheproxy
 Step 1/5 : FROM eboraas/apache
@@ -36,7 +36,7 @@ Recreating apacheverdaccio_apacheproxy_1
 To force recreate the images.
 
 ```bash
-nx run verdaccio-v6-apache-verdaccio:force-recreate --mode=apache2
+nx run verdaccio-v4-reverse-proxy-apache:force-recreate --mode=apache2
 ```
 
 To stop all containers
