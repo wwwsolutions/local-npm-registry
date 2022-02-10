@@ -19,6 +19,8 @@ All configs utilize Docker.
 
 - [ ] verdaccio-v4-apache-verdaccio
 - [ ] verdaccio-v4-docker-local-storage-volume
+  - [simple](libs/verdaccio/v4/docker-local-storage-volume/src/simple/README.md)
+
 - [ ] verdaccio-v4-docker-plugin-external
 - [ ] verdaccio-v4-gitlab-verdaccio
 - [ ] verdaccio-v4-https-portal
