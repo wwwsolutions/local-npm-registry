@@ -68,9 +68,6 @@
       "@verdacio/v6-https-portal": [
         "libs/verdaccio/v6/https-portal/src/index.ts"
       ],
-      "@verdacio/v6-reverse-proxy": [
-        "libs/verdaccio/v6/reverse-proxy/src/index.ts"
-      ],
       "@verdacio/v6-reverse-proxy-apache": [
         "libs/verdaccio/v6/reverse-proxy-apache/src/index.ts"
       ],

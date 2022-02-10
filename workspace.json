@@ -16,8 +16,8 @@
     "verdaccio-v5-reverse-proxy": "libs/verdaccio/v5/reverse-proxy",
     "verdaccio-v6-docker-local-storage-volume": "libs/verdaccio/v6/docker-local-storage-volume",
     "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
-    "verdaccio-v6-reverse-proxy": "libs/verdaccio/v6/reverse-proxy",
-    "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache"
+    "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache",
+    "verdaccio-v6-reverse-proxy-nginx": "libs/verdaccio/v6/reverse-proxy-nginx"
   },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
