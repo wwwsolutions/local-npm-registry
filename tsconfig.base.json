@@ -56,11 +56,11 @@
       "@verdacio/v5-reverse-proxy-nginx": [
         "libs/verdaccio/v5/reverse-proxy-nginx/src/index.ts"
       ],
-      "@verdacio/v6-docker-local-storage-volume": [
-        "libs/verdaccio/v6/docker-local-storage-volume/src/index.ts"
-      ],
       "@verdacio/v6-https-portal-nginx": [
         "libs/verdaccio/v6/https-portal-nginx/src/index.ts"
+      ],
+      "@verdacio/v6-local-storage-volume": [
+        "libs/verdaccio/v6/local-storage-volume/src/index.ts"
       ],
       "@verdacio/v6-reverse-proxy-apache": [
         "libs/verdaccio/v6/reverse-proxy-apache/src/index.ts"

@@ -8,7 +8,7 @@ Contains
 - storage: A published default package with 2 versions.
 
 ```bash
-npx nx run verdaccio-v6-docker-local-storage-volume:up --mode=simple
+npx nx run verdaccio-v6-local-storage-volume:up --mode=simple
 ```
 
 ## Login

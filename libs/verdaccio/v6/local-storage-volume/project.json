@@ -1,22 +1,20 @@
 {
-  "root": "libs/verdaccio/v6/docker-local-storage-volume",
-  "sourceRoot": "libs/verdaccio/v6/docker-local-storage-volume/src",
+  "root": "libs/verdaccio/v6/local-storage-volume",
+  "sourceRoot": "libs/verdaccio/v6/local-storage-volume/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/verdaccio/v6/docker-local-storage-volume/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/verdaccio/v6/local-storage-volume/**/*.ts"]
       }
     },
     "up": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v6/docker-local-storage-volume/src/",
+        "cwd": "libs/verdaccio/v6/local-storage-volume/src/",
         "commands": [
           "docker-compose --project-name v6-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
         ]
@@ -26,7 +24,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v6/docker-local-storage-volume/src/",
+        "cwd": "libs/verdaccio/v6/local-storage-volume/src/",
         "commands": [
           "docker-compose --project-name v6-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
         ]
@@ -36,7 +34,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v6/docker-local-storage-volume/src/",
+        "cwd": "libs/verdaccio/v6/local-storage-volume/src/",
         "commands": [
           "docker-compose --project-name v6-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
         ]
@@ -46,7 +44,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v6/docker-local-storage-volume/src/",
+        "cwd": "libs/verdaccio/v6/local-storage-volume/src/",
         "commands": [
           "docker-compose --project-name v6-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
         ]
@@ -64,15 +62,14 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v6-docker-local-storage-volume:up --mode=simple",
-          "nx run verdaccio-v6-docker-local-storage-volume:down --mode=simple",
-          "nx run verdaccio-v6-docker-local-storage-volume:recreate --mode=simple",
-          "nx run verdaccio-v6-docker-local-storage-volume:force-recreate --mode=simple",
-          "nx run verdaccio-v6-docker-local-storage-volume:system-prune"
+          "nx run verdaccio-v6-local-storage-volume:up --mode=simple",
+          "nx run verdaccio-v6-local-storage-volume:down --mode=simple",
+          "nx run verdaccio-v6-local-storage-volume:recreate --mode=simple",
+          "nx run verdaccio-v6-local-storage-volume:force-recreate --mode=simple",
+          "nx run verdaccio-v6-local-storage-volume:system-prune"
         ]
       }
     }
-
   },
   "tags": ["type:config", "scope:verdaccio"]
 }
