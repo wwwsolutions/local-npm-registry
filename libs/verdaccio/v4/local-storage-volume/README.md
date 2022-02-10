@@ -1,3 +1,3 @@
-# verdaccio-v4-docker-local-storage-volume
+# verdaccio-v4-local-storage-volume
 
 This library was generated with [Nx](https://nx.dev).

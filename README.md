@@ -16,12 +16,6 @@ All configs utilize Docker.
 
 ### v4
 
-- [x] verdaccio-v4-amazon-s3
-  - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
-
-- [x] verdaccio-v4-docker-local-storage-volume
-  - [simple](libs/verdaccio/v4/docker-local-storage-volume/src/simple/README.md)
-
 - [ ] verdaccio-v4-docker-plugin-external
 - [ ] verdaccio-v4-gitlab-verdaccio
 - [x] verdaccio-v4-https-portal
@@ -32,6 +26,12 @@ All configs utilize Docker.
 - [ ] verdaccio-v4-ldap-verdaccio
 - [ ] verdaccio-v4-multi-registry-uplink
 - [ ] verdaccio-v4-plugins-docker-extend
+
+- [x] verdaccio-v4-amazon-s3
+  - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
+
+- [x] verdaccio-v4-local-storage-volume
+  - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
 
 - [x] verdaccio-v4-reverse-proxy-apache
   - [apache2](libs/verdaccio/v4/reverse-proxy-apache/src/apache2/README.md)
@@ -50,8 +50,8 @@ All configs utilize Docker.
 
 ### v6
 
-- [x] verdaccio-v6-docker-local-storage-volume
-  - [simple](libs/verdaccio/v6/docker-local-storage-volume/src/simple/README.md)
+- [x] verdaccio-v6-local-storage-volume
+  - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
 
 - [x] verdaccio-v6-https-portal
   - [nginx](libs/verdaccio/v6/https-portal/src/nginx/README.md)
