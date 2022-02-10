@@ -1,13 +1,13 @@
 {
-  "root": "libs/verdaccio/v4/plugins-docker-extend",
-  "sourceRoot": "libs/verdaccio/v4/plugins-docker-extend/src",
+  "root": "libs/verdaccio/v4/gitlab",
+  "sourceRoot": "libs/verdaccio/v4/gitlab/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v4/plugins-docker-extend/**/*.ts"]
+        "lintFilePatterns": ["libs/verdaccio/v4/gitlab/**/*.ts"]
       }
     }
   },

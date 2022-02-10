@@ -16,19 +16,19 @@ All configs utilize Docker.
 
 ### v4
 
-- [ ] verdaccio-v4-docker-plugin-external
-- [ ] verdaccio-v4-gitlab-verdaccio
-- [x] verdaccio-v4-https-portal
-  - [nginx](libs/verdaccio/v4/https-portal/src/nginx/README.md)
-
+- [ ] verdaccio-v4-plugin-external
+- [ ] verdaccio-v4-gitlab
 - [ ] verdaccio-v4-kubernetes
 - [ ] verdaccio-v4-kubernetes-helm
-- [ ] verdaccio-v4-ldap-verdaccio
 - [ ] verdaccio-v4-multi-registry-uplink
-- [ ] verdaccio-v4-plugins-docker-extend
+
+- [x] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
 
 - [x] verdaccio-v4-amazon-s3
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
+
+- [x] verdaccio-v4-https-portal
+  - [nginx](libs/verdaccio/v4/https-portal-nginx/src/nginx/README.md)
 
 - [x] verdaccio-v4-local-storage-volume
   - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
@@ -54,7 +54,7 @@ All configs utilize Docker.
   - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
 
 - [x] verdaccio-v6-https-portal
-  - [nginx](libs/verdaccio/v6/https-portal/src/nginx/README.md)
+  - [nginx](libs/verdaccio/v6/https-portal-nginx/src/nginx/README.md)
 
 - [x] verdaccio-v6-reverse-proxy-apache
   - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)

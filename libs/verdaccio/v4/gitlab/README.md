@@ -1,3 +1,3 @@
-# verdaccio-v4-plugins-docker-extend
+# verdaccio-v4-gitlab
 
 This library was generated with [Nx](https://nx.dev).

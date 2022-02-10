@@ -1,3 +1,3 @@
-# verdaccio-v4-docker-plugin-external
+# verdaccio-v4-ldap
 
 This library was generated with [Nx](https://nx.dev).
