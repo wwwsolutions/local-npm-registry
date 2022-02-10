@@ -28,11 +28,11 @@
       "@verdacio/v4-gitlab-verdaccio": [
         "libs/verdaccio/v4/gitlab-verdaccio/src/index.ts"
       ],
-      "@verdacio/v4-https-portal": [
-        "libs/verdaccio/v4/https-portal/src/index.ts"
-      ],
       "@verdacio/v4-https-portal-example": [
         "libs/verdaccio/v4/https-portal-example/src/index.ts"
+      ],
+      "@verdacio/v4-https-portal-nginx": [
+        "libs/verdaccio/v4/https-portal-nginx/src/index.ts"
       ],
       "@verdacio/v4-kubernetes": ["libs/verdaccio/v4/kubernetes/src/index.ts"],
       "@verdacio/v4-kubernetes-helm": [

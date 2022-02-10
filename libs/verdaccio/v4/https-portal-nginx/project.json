@@ -1,20 +1,20 @@
 {
-  "root": "libs/verdaccio/v4/https-portal",
-  "sourceRoot": "libs/verdaccio/v4/https-portal/src",
+  "root": "libs/verdaccio/v4/https-portal-nginx",
+  "sourceRoot": "libs/verdaccio/v4/https-portal-nginx/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v4/https-portal/**/*.ts"]
+        "lintFilePatterns": ["libs/verdaccio/v4/https-portal-nginx/**/*.ts"]
       }
     },
     "up": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/https-portal/src",
+        "cwd": "libs/verdaccio/v4/https-portal-nginx/src",
         "commands": [
           "docker-compose --project-name v4-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
         ]
@@ -24,7 +24,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/https-portal/src",
+        "cwd": "libs/verdaccio/v4/https-portal-nginx/src",
         "commands": [
           "docker-compose --project-name v4-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
         ]
@@ -34,7 +34,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/https-portal/src",
+        "cwd": "libs/verdaccio/v4/https-portal-nginx/src",
         "commands": [
           "docker-compose --project-name v4-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
         ]
@@ -44,7 +44,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "cwd": "libs/verdaccio/v4/https-portal/src",
+        "cwd": "libs/verdaccio/v4/https-portal-nginx/src",
         "commands": [
           "docker-compose --project-name v4-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
         ]
@@ -62,15 +62,14 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-https-portal:up --mode=nginx",
-          "nx run verdaccio-v4-https-portal:down --mode=nginx",
-          "nx run verdaccio-v4-https-portal:recreate --mode=nginx",
-          "nx run verdaccio-v4-https-portal:force-recreate --mode=nginx",
-          "nx run verdaccio-v4-https-portal:system-prune"
+          "nx run verdaccio-v4-https-portal-nginx:up --mode=nginx",
+          "nx run verdaccio-v4-https-portal-nginx:down --mode=nginx",
+          "nx run verdaccio-v4-https-portal-nginx:recreate --mode=nginx",
+          "nx run verdaccio-v4-https-portal-nginx:force-recreate --mode=nginx",
+          "nx run verdaccio-v4-https-portal-nginx:system-prune"
         ]
       }
     }
-
   },
   "tags": ["type:config", "scope:verdaccio"]
 }

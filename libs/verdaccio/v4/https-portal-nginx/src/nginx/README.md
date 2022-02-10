@@ -32,13 +32,13 @@ To run the containers, run the followingcommands in this folder, it should start
 To recreate the nginx image you can force the build.
 
 ```bash
-npx nx run verdaccio-v4-https-portal:up --mode=nginx
+npx nx run verdaccio-v4-https-portal-nginx:up --mode=nginx
 ```
 
 To force recreate the images.
 
 ```bash
-npx nx run verdaccio-v4-https-portal:force-recreate --mode=nginx
+npx nx run verdaccio-v4-https-portal-nginx:force-recreate --mode=nginx
 ```
 
 To stop all containers

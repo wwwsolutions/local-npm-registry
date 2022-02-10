@@ -5,7 +5,7 @@
     "verdaccio-v4-docker-local-storage-volume": "libs/verdaccio/v4/docker-local-storage-volume",
     "verdaccio-v4-docker-plugin-external": "libs/verdaccio/v4/docker-plugin-external",
     "verdaccio-v4-gitlab-verdaccio": "libs/verdaccio/v4/gitlab-verdaccio",
-    "verdaccio-v4-https-portal": "libs/verdaccio/v4/https-portal",
+    "verdaccio-v4-https-portal-nginx": "libs/verdaccio/v4/https-portal-nginx",
     "verdaccio-v4-kubernetes": "libs/verdaccio/v4/kubernetes",
     "verdaccio-v4-kubernetes-helm": "libs/verdaccio/v4/kubernetes-helm",
     "verdaccio-v4-ldap-verdaccio": "libs/verdaccio/v4/ldap-verdaccio",
