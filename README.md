@@ -14,7 +14,9 @@ With [Verdaccio](https://verdaccio.org/), you can:
 
 All configs utilize Docker.
 
-- [ ] verdaccio-v4-amazon-s3-docker
+- [x] verdaccio-v4-amazon-s3
+  - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
+
 - [ ] verdaccio-v4-apache-verdaccio
 - [ ] verdaccio-v4-docker-local-storage-volume
 - [ ] verdaccio-v4-docker-plugin-external

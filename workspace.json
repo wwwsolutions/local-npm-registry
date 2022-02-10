@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "verdaccio-v4-amazon-s3-docker": "libs/verdaccio/v4/amazon-s3-docker",
+    "verdaccio-v4-amazon-s3": "libs/verdaccio/v4/amazon-s3",
     "verdaccio-v4-apache-verdaccio": "libs/verdaccio/v4/apache-verdaccio",
     "verdaccio-v4-docker-local-storage-volume": "libs/verdaccio/v4/docker-local-storage-volume",
     "verdaccio-v4-docker-plugin-external": "libs/verdaccio/v4/docker-plugin-external",

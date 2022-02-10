@@ -15,35 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@verdacio/amazon-s3-docker": [
-        "libs/verdaccio/amazon-s3-docker/src/index.ts"
-      ],
-      "@verdacio/apache-verdaccio": [
-        "libs/verdaccio/apache-verdaccio/src/index.ts"
-      ],
-      "@verdacio/docker-local-storage-volume": [
-        "libs/verdaccio/docker-local-storage-volume/src/index.ts"
-      ],
-      "@verdacio/docker-plugin-external": [
-        "libs/verdaccio/docker-plugin-external/src/index.ts"
-      ],
-      "@verdacio/gitlab-verdaccio": [
-        "libs/verdaccio/gitlab-verdaccio/src/index.ts"
-      ],
-      "@verdacio/https-portal": ["libs/verdaccio/https-portal/src/index.ts"],
-      "@verdacio/kubernetes": ["libs/verdaccio/kubernetes/src/index.ts"],
-      "@verdacio/kubernetes-helm": [
-        "libs/verdaccio/kubernetes-helm/src/index.ts"
-      ],
-      "@verdacio/ldap-verdaccio": [
-        "libs/verdaccio/ldap-verdaccio/src/index.ts"
-      ],
-      "@verdacio/multi-registry-uplink": [
-        "libs/verdaccio/multi-registry-uplink/src/index.ts"
-      ],
-      "@verdacio/v4-amazon-s3-docker": [
-        "libs/verdaccio/v4/amazon-s3-docker/src/index.ts"
-      ],
+      "@verdacio/v4-amazon-s3": ["libs/verdaccio/v4/amazon-s3/src/index.ts"],
       "@verdacio/v4-amazon-s3-docker-example": [
         "libs/verdaccio/v4/amazon-s3-docker-example/src/index.ts"
       ],

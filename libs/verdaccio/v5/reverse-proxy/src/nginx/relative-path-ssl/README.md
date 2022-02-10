@@ -9,7 +9,6 @@ Note: we should add more sort of configurations here.
 **Nginx SSL Example**
 
 ```bash
-docker-compose -f docker-compose_ssl.yml up --build --force-recreate
 npx nx run verdaccio-v5-reverse-proxy:force-recreate --mode=relative-path-ssl
 ```
 
