@@ -34,6 +34,13 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 - [x] verdaccio-v4-https-portal
   - [nginx](libs/verdaccio/v4/https-portal-nginx/src/nginx/README.md)
 
+    ```bash
+    nx run verdaccio-v4-https-portal-nginx:up --server nginx
+    nx run verdaccio-v4-https-portal-nginx:down --server nginx
+    nx run verdaccio-v4-https-portal-nginx:recreate --server nginx
+    nx run verdaccio-v4-https-portal-nginx:force-recreate --server nginx
+    ```
+
 - [x] verdaccio-v4-local-storage-volume
   - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
 
@@ -59,6 +66,13 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 - [x] verdaccio-v6-https-portal
   - [nginx](libs/verdaccio/v6/https-portal-nginx/src/nginx/README.md)
+  
+    ```bash
+    nx run verdaccio-v6-https-portal-nginx:up --server nginx
+    nx run verdaccio-v6-https-portal-nginx:down --server nginx
+    nx run verdaccio-v6-https-portal-nginx:recreate --server nginx
+    nx run verdaccio-v6-https-portal-nginx:force-recreate --server nginx
+    ```
 
 - [x] verdaccio-v6-reverse-proxy-apache
   - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)

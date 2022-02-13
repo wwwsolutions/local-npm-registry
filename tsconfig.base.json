@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@verdaccio/v4-https-portal": [
+        "libs/verdaccio/v4/https-portal/src/index.ts"
+      ],
+      "@verdaccio/v6-https-portal": [
+        "libs/verdaccio/v6/https-portal/src/index.ts"
+      ],
       "@verdacio/v4-amazon-s3": ["libs/verdaccio/v4/amazon-s3/src/index.ts"],
       "@verdacio/v4-amazon-s3-docker-example": [
         "libs/verdaccio/v4/amazon-s3-docker-example/src/index.ts"
@@ -51,6 +57,9 @@
       ],
       "@verdacio/v5-reverse-proxy-nginx": [
         "libs/verdaccio/v5/reverse-proxy-nginx/src/index.ts"
+      ],
+      "@verdacio/v6-https-portal": [
+        "libs/verdacio/v6/https-portal/src/index.ts"
       ],
       "@verdacio/v6-https-portal-nginx": [
         "libs/verdaccio/v6/https-portal-nginx/src/index.ts"
