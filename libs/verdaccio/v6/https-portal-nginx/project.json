@@ -16,7 +16,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v6/https-portal-nginx/src",
         "commands": [
-          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
+          "docker-compose --project-name v6-https-portal --verbose -f ./docker-compose.yml up -d"
         ]
       }
     },
@@ -26,7 +26,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v6/https-portal-nginx/src",
         "commands": [
-          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
+          "docker-compose --project-name v6-https-portal --verbose -f ./docker-compose.yml down --volumes --remove-orphans"
         ]
       }
     },
@@ -36,7 +36,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v6/https-portal-nginx/src",
         "commands": [
-          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
+          "docker-compose --project-name v6-https-portal --verbose -f ./docker-compose.yml up --build -d"
         ]
       }
     },
@@ -46,7 +46,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v6/https-portal-nginx/src",
         "commands": [
-          "docker-compose --project-name v6-https-portal-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
+          "docker-compose --project-name v6-https-portal --verbose -f ./docker-compose.yml up --build --force-recreate -d"
         ]
       }
     },
@@ -62,10 +62,10 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v6-https-portal-nginx:up --mode=nginx",
-          "nx run verdaccio-v6-https-portal-nginx:down --mode=nginx",
-          "nx run verdaccio-v6-https-portal-nginx:recreate --mode=nginx",
-          "nx run verdaccio-v6-https-portal-nginx:force-recreate --mode=nginx",
+          "nx run verdaccio-v6-https-portal-nginx:up",
+          "nx run verdaccio-v6-https-portal-nginx:down",
+          "nx run verdaccio-v6-https-portal-nginx:recreate",
+          "nx run verdaccio-v6-https-portal-nginx:force-recreate",
           "nx run verdaccio-v6-https-portal-nginx:system-prune"
         ]
       }
