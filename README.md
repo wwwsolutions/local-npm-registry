@@ -32,7 +32,7 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
 
 - [x] verdaccio-v4-https-portal
-  - [nginx](libs/verdaccio/v4/https-portal-nginx/src/nginx/README.md)
+  - [nginx](libs/verdaccio/v4/https-portal/src/lib/nginx/README.md)
 
     ```bash
     nx run verdaccio-v4-https-portal-nginx:up --server nginx
@@ -65,7 +65,7 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
   - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
 
 - [x] verdaccio-v6-https-portal
-  - [nginx](libs/verdaccio/v6/https-portal-nginx/src/nginx/README.md)
+  - [nginx](libs/verdaccio/v6/https-portal/src/lib/nginx/README.md)
   
     ```bash
     nx run verdaccio-v6-https-portal-nginx:up --server nginx
@@ -73,6 +73,9 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
     nx run verdaccio-v6-https-portal-nginx:recreate --server nginx
     nx run verdaccio-v6-https-portal-nginx:force-recreate --server nginx
     ```
+
+- [x] verdaccio-v6-reverse-proxy
+  - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)
 
 - [x] verdaccio-v6-reverse-proxy-apache
   - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)

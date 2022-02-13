@@ -15,62 +15,62 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@verdaccio/v4-amazon-s3": ["libs/verdaccio/v4/amazon-s3/src/index.ts"],
+      "@verdaccio/v4-amazon-s3-docker-example": [
+        "libs/verdaccio/v4/amazon-s3-docker-example/src/index.ts"
+      ],
+      "@verdaccio/v4-gitlab": ["libs/verdaccio/v4/gitlab/src/index.ts"],
       "@verdaccio/v4-https-portal": [
         "libs/verdaccio/v4/https-portal/src/index.ts"
       ],
-      "@verdaccio/v6-https-portal": [
-        "libs/verdaccio/v6/https-portal/src/index.ts"
-      ],
-      "@verdacio/v4-amazon-s3": ["libs/verdaccio/v4/amazon-s3/src/index.ts"],
-      "@verdacio/v4-amazon-s3-docker-example": [
-        "libs/verdaccio/v4/amazon-s3-docker-example/src/index.ts"
-      ],
-      "@verdacio/v4-gitlab": ["libs/verdaccio/v4/gitlab/src/index.ts"],
-      "@verdacio/v4-https-portal-example": [
+      "@verdaccio/v4-https-portal-example": [
         "libs/verdaccio/v4/https-portal-example/src/index.ts"
       ],
-      "@verdacio/v4-https-portal-nginx": [
-        "libs/verdaccio/v4/https-portal-nginx/src/index.ts"
-      ],
-      "@verdacio/v4-kubernetes": ["libs/verdaccio/v4/kubernetes/src/index.ts"],
-      "@verdacio/v4-kubernetes-helm": [
+      "@verdaccio/v4-kubernetes": ["libs/verdaccio/v4/kubernetes/src/index.ts"],
+      "@verdaccio/v4-kubernetes-helm": [
         "libs/verdaccio/v4/kubernetes-helm/src/index.ts"
       ],
-      "@verdacio/v4-ldap": ["libs/verdaccio/v4/ldap/src/index.ts"],
-      "@verdacio/v4-local-storage-volume": [
+      "@verdaccio/v4-ldap": ["libs/verdaccio/v4/ldap/src/index.ts"],
+      "@verdaccio/v4-local-storage-volume": [
         "libs/verdaccio/v4/local-storage-volume/src/index.ts"
       ],
-      "@verdacio/v4-multi-registry-uplink": [
+      "@verdaccio/v4-multi-registry-uplink": [
         "libs/verdaccio/v4/multi-registry-uplink/src/index.ts"
       ],
-      "@verdacio/v4-plugin-external": [
+      "@verdaccio/v4-plugin-external": [
         "libs/verdaccio/v4/plugin-external/src/index.ts"
       ],
-      "@verdacio/v4-plugins-docker-extend": [
+      "@verdaccio/v4-plugins-docker-extend": [
         "libs/verdaccio/v4/plugins-docker-extend/src/index.ts"
       ],
-      "@verdacio/v4-reverse-proxy-apache": [
+      "@verdaccio/v4-reverse-proxy": [
+        "libs/verdaccio/v4/reverse-proxy/src/index.ts"
+      ],
+      "@verdaccio/v4-reverse-proxy-apache": [
         "libs/verdaccio/v4/reverse-proxy-apache/src/index.ts"
       ],
-      "@verdacio/v4-reverse-proxy-nginx": [
+      "@verdaccio/v4-reverse-proxy-nginx": [
         "libs/verdaccio/v4/reverse-proxy-nginx/src/index.ts"
       ],
-      "@verdacio/v5-reverse-proxy-nginx": [
+      "@verdaccio/v5-reverse-proxy": [
+        "libs/verdaccio/v5/reverse-proxy/src/index.ts"
+      ],
+      "@verdaccio/v5-reverse-proxy-nginx": [
         "libs/verdaccio/v5/reverse-proxy-nginx/src/index.ts"
       ],
-      "@verdacio/v6-https-portal": [
+      "@verdaccio/v6-https-portal": [
         "libs/verdacio/v6/https-portal/src/index.ts"
       ],
-      "@verdacio/v6-https-portal-nginx": [
-        "libs/verdaccio/v6/https-portal-nginx/src/index.ts"
-      ],
-      "@verdacio/v6-local-storage-volume": [
+      "@verdaccio/v6-local-storage-volume": [
         "libs/verdaccio/v6/local-storage-volume/src/index.ts"
       ],
-      "@verdacio/v6-reverse-proxy-apache": [
+      "@verdaccio/v6-reverse-proxy": [
+        "libs/verdaccio/v6/reverse-proxy/src/index.ts"
+      ],
+      "@verdaccio/v6-reverse-proxy-apache": [
         "libs/verdaccio/v6/reverse-proxy-apache/src/index.ts"
       ],
-      "@verdacio/v6-reverse-proxy-nginx": [
+      "@verdaccio/v6-reverse-proxy-nginx": [
         "libs/verdaccio/v6/reverse-proxy-nginx/src/index.ts"
       ]
     }
