@@ -75,7 +75,37 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
     ```
 
 - [x] verdaccio-v6-reverse-proxy
-  - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)
+  - apache2
+
+    - [relative-path](libs/verdaccio/v6/reverse-proxy/src/lib/apache2/relative-path-ssl/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v6-reverse-proxy:up --server apache2 --path relative-path
+      ```
+
+  - nginx
+    - [root-path](libs/verdaccio/v6/reverse-proxy/src/lib/nginx/root-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v6-reverse-proxy:up --server nginx --path root-path
+      ```
+
+    - [relative-path](libs/verdaccio/v6/reverse-proxy/src/lib/nginx/relative-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v6-reverse-proxy:up --server nginx --path relative-path
+      ```
+
+    - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy/src/lib/nginx/relative-path-ssl/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v6-reverse-proxy:up --server nginx --path relative-path-ssl
+      ```
+
 
 - [x] verdaccio-v6-reverse-proxy-apache
   - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)
