@@ -10,13 +10,13 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - Cache npmjs.org registry
 - Override public packages
 
-## Available Configurations
+## Verdaccio example configurations
 
-Configs utilize Docker and Kubernetes.
+Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 ### v4
 
-- [ ] verdaccio-v4-plugin-external
+- [x] verdaccio-v4-plugin-external
 
 - [x] [verdaccio-v4-gitlab](libs/verdaccio/v4/gitlab/src/lib/README.md)
 
@@ -68,6 +68,10 @@ Configs utilize Docker and Kubernetes.
   - [relative-path](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path/README.md)
   - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
 
+*adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
+
+---
+
 ## Usage
 
 ### Register user | login
@@ -87,7 +91,3 @@ npm install react --registry http://localhost:4873
 ```bash
 npm publish --registry http://localhost:4873
 ```
-
----
-
-*adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
