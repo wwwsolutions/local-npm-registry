@@ -35,10 +35,8 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
   - [nginx](libs/verdaccio/v4/https-portal/src/lib/nginx/README.md)
 
     ```bash
+    # commands: up | down | recreate | force-recreate      
     nx run verdaccio-v4-https-portal-nginx:up --server nginx
-    nx run verdaccio-v4-https-portal-nginx:down --server nginx
-    nx run verdaccio-v4-https-portal-nginx:recreate --server nginx
-    nx run verdaccio-v4-https-portal-nginx:force-recreate --server nginx
     ```
 
 - [x] verdaccio-v4-local-storage-volume
@@ -54,10 +52,29 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 ### v5
 
-- [x] verdaccio-v5-reverse-proxy-nginx
-  - [root-path](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
+- [x] __Reverse Proxy__ [verdaccio-v5-reverse-proxy](libs/verdaccio/v5/reverse-proxy/project.json)
+
+  - nginx
+    - [root-path](libs/verdaccio/v5/reverse-proxy/src/lib/nginx/root-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v5-reverse-proxy:up --server nginx --path root-path
+      ```
+
+    - [relative-path](libs/verdaccio/v5/reverse-proxy/src/lib/nginx/relative-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v5-reverse-proxy:up --server nginx --path relative-path
+      ```
+
+    - [relative-path-ssl](libs/verdaccio/v5/reverse-proxy/src/lib/nginx/relative-path-ssl/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v5-reverse-proxy:up --server nginx --path relative-path-ssl
+      ```
 
 ### v6
 
@@ -68,13 +85,11 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
   - [nginx](libs/verdaccio/v6/https-portal/src/lib/nginx/README.md)
   
     ```bash
+    # commands: up | down | recreate | force-recreate  
     nx run verdaccio-v6-https-portal-nginx:up --server nginx
-    nx run verdaccio-v6-https-portal-nginx:down --server nginx
-    nx run verdaccio-v6-https-portal-nginx:recreate --server nginx
-    nx run verdaccio-v6-https-portal-nginx:force-recreate --server nginx
     ```
 
-- [x] verdaccio-v6-reverse-proxy
+- [x] __Reverse Proxy__ [verdaccio-v6-reverse-proxy](libs/verdaccio/v6/reverse-proxy/project.json)
   - apache2
 
     - [relative-path](libs/verdaccio/v6/reverse-proxy/src/lib/apache2/relative-path-ssl/README.md)
@@ -105,15 +120,6 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
         # commands: up | down | recreate | force-recreate  
         nx run verdaccio-v6-reverse-proxy:up --server nginx --path relative-path-ssl
       ```
-
-
-- [x] verdaccio-v6-reverse-proxy-apache
-  - [apache2](libs/verdaccio/v6/reverse-proxy-apache/src/apache2/README.md)
-
-- [x] verdaccio-v6-reverse-proxy-nginx
-  - [root-path](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v6/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
 
 *adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
 
