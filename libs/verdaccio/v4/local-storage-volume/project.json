@@ -16,7 +16,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v4/local-storage-volume/src/",
         "commands": [
-          "docker-compose --project-name v4-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up -d"
+          "docker-compose --project-name v4-local-storage-volume-{args.config} --verbose -f ./{args.config}/docker-compose.yml up -d"
         ]
       }
     },
@@ -26,7 +26,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v4/local-storage-volume/src/",
         "commands": [
-          "docker-compose --project-name v4-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml down --volumes --remove-orphans"
+          "docker-compose --project-name v4-local-storage-volume-{args.config} --verbose -f ./{args.config}/docker-compose.yml down --volumes --remove-orphans"
         ]
       }
     },
@@ -36,7 +36,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v4/local-storage-volume/src/",
         "commands": [
-          "docker-compose --project-name v4-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build -d"
+          "docker-compose --project-name v4-local-storage-volume-{args.config} --verbose -f ./{args.config}/docker-compose.yml up --build -d"
         ]
       }
     },
@@ -46,7 +46,7 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v4/local-storage-volume/src/",
         "commands": [
-          "docker-compose --project-name v4-local-storage-volume-{args.mode} --verbose -f ./{args.mode}/docker-compose.yml up --build --force-recreate -d"
+          "docker-compose --project-name v4-local-storage-volume-{args.config} --verbose -f ./{args.config}/docker-compose.yml up --build --force-recreate -d"
         ]
       }
     },
@@ -62,10 +62,10 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v4-local-storage-volume:up --mode=simple",
-          "nx run verdaccio-v4-local-storage-volume:down --mode=simple",
-          "nx run verdaccio-v4-local-storage-volume:recreate --mode=simple",
-          "nx run verdaccio-v4-local-storage-volume:force-recreate --mode=simple",
+          "nx run verdaccio-v4-local-storage-volume:up --config=minimal",
+          "nx run verdaccio-v4-local-storage-volume:down --config=minimal",
+          "nx run verdaccio-v4-local-storage-volume:recreate --config=minimal",
+          "nx run verdaccio-v4-local-storage-volume:force-recreate --config=minimal",
           "nx run verdaccio-v4-local-storage-volume:system-prune"
         ]
       }

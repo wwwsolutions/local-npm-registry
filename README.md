@@ -28,9 +28,14 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 - [ ] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
 
-- [ ] verdaccio-v4-amazon-s3
+- [x] __AMAZON S3__ [verdaccio-v4-amazon-s3](libs/verdaccio/v4/amazon-s3/project.json)
 
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
+
+    ```bash
+      # commands: up | down | recreate | force-recreate  
+      nx run verdaccio-v4-reverse-proxy:up --server apache2 --path relative-path
+    ```
 
 - [x] __HTTPS PORTAL__ [verdaccio-v4-https-portal](libs/verdaccio/v4/https-portal/project.json)
 
@@ -41,9 +46,14 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
     nx run verdaccio-v4-https-portal-nginx:up --server nginx
     ```
 
-- [ ] verdaccio-v4-local-storage-volume
+- [x] __LOCAL STORAGE VOLUME__ [verdaccio-v4-local-storage-volume](libs/verdaccio/v4/local-storage-volume/project.json)
 
-  - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
+  - [minimum](libs/verdaccio/v4/local-storage-volume/src/minimum/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v4-local-storage-volume:up --config minimum
+      ```
 
 - [x] __REVERSE PROXY__ [verdaccio-v4-reverse-proxy](libs/verdaccio/v4/reverse-proxy/project.json)
 
@@ -108,9 +118,14 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 ### v6
 
-- [x] verdaccio-v6-local-storage-volume
+- [x] __LOCAL STORAGE VOLUME__ [verdaccio-v6-local-storage-volume](libs/verdaccio/v6/local-storage-volume/project.json)
 
-  - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
+  - [minimum](libs/verdaccio/v6/local-storage-volume/src/minimum/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v6-local-storage-volume:up --config minimum
+      ```
 
 - [x] __HTTPS PORTAL__ [verdaccio-v6-https-portal](libs/verdaccio/v6/https-portal/project.json)
 
@@ -155,7 +170,7 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
         nx run verdaccio-v6-reverse-proxy:up --server nginx --path relative-path-ssl
       ```
 
-*adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
+> *adapted from [verdaccio/examples](https://github.com/verdaccio/verdaccio/tree/master/docker-examples)
 
 ---
 

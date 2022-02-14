@@ -1,6 +1,6 @@
 # Verdaccio and simple local storage
 
-This example shows a simple configuration for `verdaccio` plus the default local storage with the minimum configuration required using `docker-compose`.
+This example shows a simple configuration for `verdaccio` plus the default local storage with the minimal configuration required using `docker-compose`.
 
 Contains
 
