@@ -3,20 +3,18 @@
   "projects": {
     "verdaccio-v4-amazon-s3": "libs/verdaccio/v4/amazon-s3",
     "verdaccio-v4-gitlab": "libs/verdaccio/v4/gitlab",
-    "verdaccio-v4-https-portal-nginx": "libs/verdaccio/v4/https-portal-nginx",
+    "verdaccio-v4-https-portal": "libs/verdaccio/v4/https-portal",
     "verdaccio-v4-kubernetes": "libs/verdaccio/v4/kubernetes",
     "verdaccio-v4-kubernetes-helm": "libs/verdaccio/v4/kubernetes-helm",
     "verdaccio-v4-ldap": "libs/verdaccio/v4/ldap",
     "verdaccio-v4-local-storage-volume": "libs/verdaccio/v4/local-storage-volume",
     "verdaccio-v4-multi-registry-uplink": "libs/verdaccio/v4/multi-registry-uplink",
     "verdaccio-v4-plugin-external": "libs/verdaccio/v4/plugin-external",
-    "verdaccio-v4-reverse-proxy-apache": "libs/verdaccio/v4/reverse-proxy-apache",
-    "verdaccio-v4-reverse-proxy-nginx": "libs/verdaccio/v4/reverse-proxy-nginx",
-    "verdaccio-v5-reverse-proxy-nginx": "libs/verdaccio/v5/reverse-proxy-nginx",
-    "verdaccio-v6-https-portal-nginx": "libs/verdaccio/v6/https-portal-nginx",
+    "verdaccio-v4-reverse-proxy": "libs/verdaccio/v4/reverse-proxy",
+    "verdaccio-v5-reverse-proxy": "libs/verdaccio/v5/reverse-proxy",
+    "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
     "verdaccio-v6-local-storage-volume": "libs/verdaccio/v6/local-storage-volume",
-    "verdaccio-v6-reverse-proxy-apache": "libs/verdaccio/v6/reverse-proxy-apache",
-    "verdaccio-v6-reverse-proxy-nginx": "libs/verdaccio/v6/reverse-proxy-nginx"
+    "verdaccio-v6-reverse-proxy": "libs/verdaccio/v6/reverse-proxy"
   },
   "cli": {
     "defaultCollection": "@nrwl/workspace"

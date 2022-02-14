@@ -1,0 +1,93 @@
+{
+  "root": "libs/verdaccio/v6/reverse-proxy",
+  "sourceRoot": "libs/verdaccio/v6/reverse-proxy/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/verdaccio/v6/reverse-proxy",
+        "main": "libs/verdaccio/v6/reverse-proxy/src/index.ts",
+        "tsConfig": "libs/verdaccio/v6/reverse-proxy/tsconfig.lib.json",
+        "assets": ["libs/verdaccio/v6/reverse-proxy/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/verdaccio/v6/reverse-proxy/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/verdaccio/v6/reverse-proxy"],
+      "options": {
+        "jestConfig": "libs/verdaccio/v6/reverse-proxy/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v6-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v6-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v6-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v6-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v6-reverse-proxy:up --server=nginx --path=relative-path",
+          "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=relative-path",
+          "nx run verdaccio-v6-reverse-proxy:recreate --server=nginx --path=relative-path",
+          "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=relative-path",
+          "nx run verdaccio-v6-reverse-proxy:system-prune"
+        ]
+      }
+    }
+  },
+  "tags": ["type:config", "scope:verdaccio"]
+}
