@@ -27,6 +27,66 @@
         "jestConfig": "libs/verdaccio/v4/reverse-proxy/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "up": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up -d"
+        ]
+      }
+    },
+    "down": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml down --volumes --remove-orphans"
+        ]
+      }
+    },
+    "recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up --build -d"
+        ]
+      }
+    },
+    "force-recreate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v4/reverse-proxy/src/lib",
+        "commands": [
+          "docker-compose --project-name v4-reverse-proxy-{args.server} --verbose -f ./{args.server}/{args.path}/docker-compose.yml up --build --force-recreate -d"
+        ]
+      }
+    },
+    "system-prune": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": ["docker system prune -a --volumes -f"]
+      }
+    },
+    "all-commands": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run verdaccio-v4-reverse-proxy:up --server=nginx --path=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:down --server=nginx --path=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:recreate --server=nginx --path=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:force-recreate --server=nginx --path=relative-path",
+          "nx run verdaccio-v4-reverse-proxy:system-prune"
+        ]
+      }
     }
   },
   "tags": ["type:config", "scope:verdaccio"]

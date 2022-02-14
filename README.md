@@ -16,22 +16,24 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 ### v4
 
-- [x] verdaccio-v4-plugin-external
+- [ ] verdaccio-v4-plugin-external
 
-- [x] [verdaccio-v4-gitlab](libs/verdaccio/v4/gitlab/src/lib/README.md)
+- [ ] [verdaccio-v4-gitlab](libs/verdaccio/v4/gitlab/src/lib/README.md)
 
-- [x] [verdaccio-v4-kubernetes](libs/verdaccio/v4/kubernetes/src/lib/README.md)
+- [ ] [verdaccio-v4-kubernetes](libs/verdaccio/v4/kubernetes/src/lib/README.md)
 
-- [x] [verdaccio-v4-kubernetes-helm](libs/verdaccio/v4/kubernetes-helm/src/lib/README.md)
+- [ ] [verdaccio-v4-kubernetes-helm](libs/verdaccio/v4/kubernetes-helm/src/lib/README.md)
 
-- [x] [verdaccio-v4-multi-registry-uplink](libs/verdaccio/v4/multi-registry-uplink/src/lib/README.md)
+- [ ] [verdaccio-v4-multi-registry-uplink](libs/verdaccio/v4/multi-registry-uplink/src/lib/README.md)
 
-- [x] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
+- [ ] [verdaccio-v4-ldap](libs/verdaccio/v4/ldap/src/lib/README.md)
 
-- [x] verdaccio-v4-amazon-s3
+- [ ] verdaccio-v4-amazon-s3
+
   - [localstock](libs/verdaccio/v4/amazon-s3/src/localstock/README.md)
 
-- [x] verdaccio-v4-https-portal
+- [x] __HTTPS PORTAL__ [verdaccio-v4-https-portal](libs/verdaccio/v4/https-portal/project.json)
+
   - [nginx](libs/verdaccio/v4/https-portal/src/lib/nginx/README.md)
 
     ```bash
@@ -39,22 +41,50 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
     nx run verdaccio-v4-https-portal-nginx:up --server nginx
     ```
 
-- [x] verdaccio-v4-local-storage-volume
+- [ ] verdaccio-v4-local-storage-volume
+
   - [simple](libs/verdaccio/v4/local-storage-volume/src/simple/README.md)
 
-- [x] verdaccio-v4-reverse-proxy-apache
-  - [apache2](libs/verdaccio/v4/reverse-proxy-apache/src/apache2/README.md)
+- [x] __REVERSE PROXY__ [verdaccio-v4-reverse-proxy](libs/verdaccio/v4/reverse-proxy/project.json)
 
-- [x] verdaccio-v4-reverse-proxy-nginx
-  - [root-path](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/root-path/README.md)
-  - [relative-path](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/relative-path/README.md)
-  - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy-nginx/src/nginx/relative-path-ssl/README.md)
+  - apache2
+
+    - [relative-path](libs/verdaccio/v4/reverse-proxy/src/lib/apache2/relative-path-ssl/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v4-reverse-proxy:up --server apache2 --path relative-path
+      ```
+
+  - nginx
+
+    - [root-path](libs/verdaccio/v4/reverse-proxy/src/lib/nginx/root-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v4-reverse-proxy:up --server nginx --path root-path
+      ```
+
+    - [relative-path](libs/verdaccio/v4/reverse-proxy/src/lib/nginx/relative-path/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v4-reverse-proxy:up --server nginx --path relative-path
+      ```
+
+    - [relative-path-ssl](libs/verdaccio/v4/reverse-proxy/src/lib/nginx/relative-path-ssl/README.md)
+
+      ```bash
+        # commands: up | down | recreate | force-recreate  
+        nx run verdaccio-v4-reverse-proxy:up --server nginx --path relative-path-ssl
+      ```
 
 ### v5
 
-- [x] __Reverse Proxy__ [verdaccio-v5-reverse-proxy](libs/verdaccio/v5/reverse-proxy/project.json)
+- [x] __REVERSE PROXY__ [verdaccio-v5-reverse-proxy](libs/verdaccio/v5/reverse-proxy/project.json)
 
   - nginx
+
     - [root-path](libs/verdaccio/v5/reverse-proxy/src/lib/nginx/root-path/README.md)
 
       ```bash
@@ -79,9 +109,11 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 ### v6
 
 - [x] verdaccio-v6-local-storage-volume
+
   - [simple](libs/verdaccio/v6/local-storage-volume/src/simple/README.md)
 
-- [x] verdaccio-v6-https-portal
+- [x] __HTTPS PORTAL__ [verdaccio-v6-https-portal](libs/verdaccio/v6/https-portal/project.json)
+
   - [nginx](libs/verdaccio/v6/https-portal/src/lib/nginx/README.md)
   
     ```bash
@@ -89,7 +121,8 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
     nx run verdaccio-v6-https-portal-nginx:up --server nginx
     ```
 
-- [x] __Reverse Proxy__ [verdaccio-v6-reverse-proxy](libs/verdaccio/v6/reverse-proxy/project.json)
+- [x] __REVERSE PROXY__ [verdaccio-v6-reverse-proxy](libs/verdaccio/v6/reverse-proxy/project.json)
+
   - apache2
 
     - [relative-path](libs/verdaccio/v6/reverse-proxy/src/lib/apache2/relative-path-ssl/README.md)
@@ -100,6 +133,7 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
       ```
 
   - nginx
+
     - [root-path](libs/verdaccio/v6/reverse-proxy/src/lib/nginx/root-path/README.md)
 
       ```bash
