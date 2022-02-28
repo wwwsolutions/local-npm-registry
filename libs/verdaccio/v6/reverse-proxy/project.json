@@ -68,6 +68,18 @@
         ]
       }
     },
+    "reset": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
+        "commands": [
+          { "command": "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=root-path" },
+          { "command": "nx run verdaccio-v6-reverse-proxy:system-prune" },
+          { "command": "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=root-path" }
+        ]
+      }
+    },
     "system-prune": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
@@ -80,10 +92,10 @@
       "options": {
         "parallel": false,
         "commands": [
-          "nx run verdaccio-v6-reverse-proxy:up --server=nginx --path=relative-path",
-          "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=relative-path",
-          "nx run verdaccio-v6-reverse-proxy:recreate --server=nginx --path=relative-path",
-          "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=relative-path",
+          "nx run verdaccio-v6-reverse-proxy:up --server=nginx --path=root-path",
+          "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=root-path",
+          "nx run verdaccio-v6-reverse-proxy:recreate --server=nginx --path=root-path",
+          "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=root-path",
           "nx run verdaccio-v6-reverse-proxy:system-prune"
         ]
       }
