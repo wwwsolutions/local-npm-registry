@@ -193,3 +193,5 @@ npm install react --registry http://localhost:4873
 ```bash
 npm publish --registry http://localhost:4873
 ```
+
+---
