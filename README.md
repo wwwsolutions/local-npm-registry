@@ -10,6 +10,10 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - Cache npmjs.org registry
 - Override public packages
 
+## Prerequisite
+
+- running Docker engine.
+
 ## Verdaccio example configurations
 
 Set of configs utilizing Docker and Kubernetes within Nx workspace.
@@ -176,7 +180,9 @@ Set of configs utilizing Docker and Kubernetes within Nx workspace.
 
 ## Usage
 
-### Register user | login
+Open Verdaccio instance in browser: http://localhost:4873.
+
+### Register user | Login
 
 ```bash
 npm adduser --registry http://localhost:4873

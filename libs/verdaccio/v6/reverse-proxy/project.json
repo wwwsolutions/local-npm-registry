@@ -4,7 +4,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/workspace:tsc",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/verdaccio/v6/reverse-proxy",
@@ -74,9 +74,15 @@
         "parallel": false,
         "cwd": "libs/verdaccio/v6/reverse-proxy/src/lib",
         "commands": [
-          { "command": "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=root-path" },
-          { "command": "nx run verdaccio-v6-reverse-proxy:system-prune" },
-          { "command": "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=root-path" }
+          {
+            "command": "nx run verdaccio-v6-reverse-proxy:down --server=nginx --path=root-path"
+          },
+          {
+            "command": "nx run verdaccio-v6-reverse-proxy:system-prune"
+          },
+          {
+            "command": "nx run verdaccio-v6-reverse-proxy:force-recreate --server=nginx --path=root-path"
+          }
         ]
       }
     },
