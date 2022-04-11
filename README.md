@@ -10,9 +10,9 @@ With [Verdaccio](https://verdaccio.org/), you can:
 - Cache npmjs.org registry
 - Override public packages
 
-## Prerequisite
+## Prerequisites
 
-- running Docker engine.
+- Docker
 
 ## Verdaccio example configurations
 
