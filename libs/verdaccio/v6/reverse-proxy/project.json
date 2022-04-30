@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/verdaccio/v6/reverse-proxy"],
       "options": {
-        "jestConfig": "libs/verdaccio/v6/reverse-proxy/jest.config.js",
+        "jestConfig": "libs/verdaccio/v6/reverse-proxy/jest.config.ts",
         "passWithNoTests": true
       }
     },
