@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/kubernetes-helm",
   "sourceRoot": "libs/verdaccio/v4/kubernetes-helm/src",
   "projectType": "library",
   "targets": {

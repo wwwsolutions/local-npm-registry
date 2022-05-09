@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/ldap",
   "sourceRoot": "libs/verdaccio/v4/ldap/src",
   "projectType": "library",
   "targets": {

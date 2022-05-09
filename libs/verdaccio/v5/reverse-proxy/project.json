@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v5/reverse-proxy",
   "sourceRoot": "libs/verdaccio/v5/reverse-proxy/src",
   "projectType": "library",
   "targets": {
