@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/plugin-external",
   "sourceRoot": "libs/verdaccio/v4/plugin-external/src",
   "projectType": "library",
   "targets": {

@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/local-storage-volume",
   "sourceRoot": "libs/verdaccio/v4/local-storage-volume/src",
   "projectType": "library",
   "targets": {

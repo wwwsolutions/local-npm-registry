@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/multi-registry-uplink",
   "sourceRoot": "libs/verdaccio/v4/multi-registry-uplink/src",
   "projectType": "library",
   "targets": {

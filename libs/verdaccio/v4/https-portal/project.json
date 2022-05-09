@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/https-portal",
   "sourceRoot": "libs/verdaccio/v4/https-portal/src/lib",
   "projectType": "library",
   "targets": {

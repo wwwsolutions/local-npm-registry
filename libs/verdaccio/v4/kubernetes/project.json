@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/kubernetes",
   "sourceRoot": "libs/verdaccio/v4/kubernetes/src",
   "projectType": "library",
   "targets": {

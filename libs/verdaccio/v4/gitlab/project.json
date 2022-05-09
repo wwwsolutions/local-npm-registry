@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/gitlab",
   "sourceRoot": "libs/verdaccio/v4/gitlab/src",
   "projectType": "library",
   "targets": {

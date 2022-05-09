@@ -1,5 +1,4 @@
 {
-  "root": "libs/verdaccio/v4/amazon-s3",
   "sourceRoot": "libs/verdaccio/v4/amazon-s3/src",
   "projectType": "library",
   "targets": {
