@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   displayName: 'verdaccio-v4-reverse-proxy',
 
   globals: {
@@ -12,5 +12,5 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../../../coverage/libs/verdaccio/v4/reverse-proxy',
-  preset: '../../../../jest.preset.ts',
+  preset: '../../../../jest.preset.js',
 };
