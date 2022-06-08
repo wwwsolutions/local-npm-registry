@@ -1,12 +1,17 @@
 {
+  "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/verdaccio/v4/ldap/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v4/ldap/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/verdaccio/v4/ldap/**/*.ts"
+        ]
       }
     },
     "up": {
@@ -53,7 +58,9 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "commands": ["docker system prune -a --volumes -f"]
+        "commands": [
+          "docker system prune -a --volumes -f"
+        ]
       }
     },
     "all-commands": {
@@ -70,5 +77,8 @@
       }
     }
   },
-  "tags": ["type:config", "scope:verdaccio"]
+  "tags": [
+    "type:config",
+    "scope:verdaccio"
+  ]
 }
