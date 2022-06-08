@@ -15,5 +15,6 @@
     "verdaccio-v6-https-portal": "libs/verdaccio/v6/https-portal",
     "verdaccio-v6-local-storage-volume": "libs/verdaccio/v6/local-storage-volume",
     "verdaccio-v6-reverse-proxy": "libs/verdaccio/v6/reverse-proxy"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
