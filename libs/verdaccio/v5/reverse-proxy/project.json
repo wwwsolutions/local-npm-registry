@@ -1,27 +1,38 @@
 {
+  "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/verdaccio/v5/reverse-proxy/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/verdaccio/v5/reverse-proxy",
         "main": "libs/verdaccio/v5/reverse-proxy/src/index.ts",
         "tsConfig": "libs/verdaccio/v5/reverse-proxy/tsconfig.lib.json",
-        "assets": ["libs/verdaccio/v5/reverse-proxy/*.md"]
+        "assets": [
+          "libs/verdaccio/v5/reverse-proxy/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/verdaccio/v5/reverse-proxy/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/verdaccio/v5/reverse-proxy/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/verdaccio/v5/reverse-proxy"],
+      "outputs": [
+        "coverage/libs/verdaccio/v5/reverse-proxy"
+      ],
       "options": {
         "jestConfig": "libs/verdaccio/v5/reverse-proxy/jest.config.ts",
         "passWithNoTests": true
@@ -71,7 +82,9 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "parallel": false,
-        "commands": ["docker system prune -a --volumes -f"]
+        "commands": [
+          "docker system prune -a --volumes -f"
+        ]
       }
     },
     "all-commands": {
@@ -88,5 +101,8 @@
       }
     }
   },
-  "tags": ["type:config", "scope:verdaccio"]
+  "tags": [
+    "type:config",
+    "scope:verdaccio"
+  ]
 }
