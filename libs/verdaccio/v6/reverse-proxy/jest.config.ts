@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
   displayName: 'verdaccio-v6-reverse-proxy',
 
