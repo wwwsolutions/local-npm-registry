@@ -5,17 +5,13 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/verdaccio/v4/plugin-external/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/verdaccio/v4/plugin-external/**/*.ts"]
       }
     },
     "up": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
         "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
@@ -25,7 +21,7 @@
       }
     },
     "down": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
         "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
@@ -35,7 +31,7 @@
       }
     },
     "recreate": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
         "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
@@ -45,7 +41,7 @@
       }
     },
     "force-recreate": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
         "cwd": "libs/verdaccio/v4/plugin-external/src/lib",
@@ -55,16 +51,14 @@
       }
     },
     "system-prune": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
-        "commands": [
-          "docker system prune -a --volumes -f"
-        ]
+        "commands": ["docker system prune -a --volumes -f"]
       }
     },
     "all-commands": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "parallel": false,
         "commands": [
@@ -77,8 +71,5 @@
       }
     }
   },
-  "tags": [
-    "type:config",
-    "scope:verdaccio"
-  ]
+  "tags": ["type:config", "scope:verdaccio"]
 }
