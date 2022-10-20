@@ -5,18 +5,11 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/verdaccio/v4/kubernetes/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/verdaccio/v4/kubernetes/**/*.ts"]
       }
     }
   },
-  "tags": [
-    "type:config",
-    "scope:verdaccio"
-  ]
+  "tags": ["type:config", "scope:verdaccio"]
 }
