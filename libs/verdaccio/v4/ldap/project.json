@@ -1,4 +1,5 @@
 {
+  "name": "verdaccio-v4-ldap",
   "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/verdaccio/v4/ldap/src",
   "projectType": "library",
