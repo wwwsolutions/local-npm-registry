@@ -1,4 +1,5 @@
 {
+  "name": "verdaccio-v4-multi-registry-uplink",
   "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/verdaccio/v4/multi-registry-uplink/src",
   "projectType": "library",
