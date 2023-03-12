@@ -201,3 +201,10 @@ npm publish --registry http://localhost:4873
 ```
 
 ---
+
+LOG
+
+nx update failure
+
+npx nx migrate --run-migrations
+> NX   Command failed: npx nx migrate --run-migrations
