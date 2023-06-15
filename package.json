@@ -27,7 +27,7 @@
     "prettier": "2.6.2",
     "ts-jest": "28.0.8",
     "typescript": "4.8.4",
-    "nx": "15.9.2"
+    "nx": "15.9.3"
   },
   "dependencies": {
     "nx": "^13.10.1",
