@@ -201,8 +201,11 @@ npm install react --registry http://localhost:4873
 ```bash
 npm publish --registry http://localhost:4873
 ```
+
 ## LOG
 
 - migrated to nx 15.8.9.
 - migrated to nx 15.9.2.
 - migrated to nx 15.9.3.
+
+---
